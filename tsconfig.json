@@ -1,0 +1,19 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react", // Adjust as needed for your project; "react-jsx" is another common option
+    "baseUrl": "./", // Set the base URL for resolving non-relative module names
+    "paths": {
+      "@pages/*": ["pages/*"] // Example path alias; adjust according to your project structure
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.jsx",
+    "pages/Login.tsx",
+    "pages/HomePage.tsx",
+    "App.tsx"
+  ] // Include .jsx files in your project
+}
